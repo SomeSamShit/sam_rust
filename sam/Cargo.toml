@@ -1,0 +1,8 @@
+[workspace]
+members = [ "sam_utils", "sam_wd"]
+
+[workspace.dependencies]
+tokio     = { version = "1", features = ["full", "process"] }
+clap      = { version = "3" }
+chrono    = { version = "0.4" }
+sam_utils = { path = "./sam_utils" }

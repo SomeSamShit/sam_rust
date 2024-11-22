@@ -1,0 +1,11 @@
+[package]
+name = "sam_wd"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio     =  { workspace = true }
+clap      =  { workspace = true }
+chrono    = { workspace = true }
+sam_utils = { workspace = true }
+
