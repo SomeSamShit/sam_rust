@@ -359,6 +359,24 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "719b953e2095829ee67db738b3bfa9fa368c94900df327b3f07fe6e794d2fe1f"
 
 [[package]]
+name = "sam_dap"
+version = "0.1.0"
+dependencies = [
+ "clap",
+ "sam_utils",
+ "tokio",
+]
+
+[[package]]
+name = "sam_rep"
+version = "0.1.0"
+dependencies = [
+ "clap",
+ "sam_utils",
+ "tokio",
+]
+
+[[package]]
 name = "sam_utils"
 version = "0.1.0"
 dependencies = [

@@ -1,0 +1,9 @@
+[package]
+name = "sam_dap"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio     = { workspace = true }
+clap      = { workspace = true }
+sam_utils = { workspace = true }

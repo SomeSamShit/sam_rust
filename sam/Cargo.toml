@@ -1,5 +1,5 @@
 [workspace]
-members = [ "sam_utils", "sam_wd"]
+members = [ "sam_dap", "sam_rep", "sam_utils", "sam_wd"]
 
 [workspace.dependencies]
 tokio     = { version = "1", features = ["full", "process"] }

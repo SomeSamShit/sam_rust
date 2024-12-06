@@ -6,6 +6,8 @@ use chrono::Local;
 use std::process;
 use tokio::io::Error;
 
+pub const REP_SOCK: &str = "/tmp/.rep.sock";
+
 pub type LogFile = Mutex<File>;
 
 #[derive(Debug, PartialOrd, Ord, PartialEq, Eq)]

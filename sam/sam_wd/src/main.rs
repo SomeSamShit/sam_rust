@@ -1,7 +1,7 @@
 use clap::{App, Arg};
 use std::sync::Arc;
-use tokio::time::{sleep, Duration};
 use sam_utils::{Logger, LogLevel};
+use tokio::time::{sleep, Duration};
 
 async fn exec(exec_path: &str, task_id: usize, logger: Arc<Logger>) -> Option<tokio::process::Child> {
     logger.info(format!("Spawning child from {}", exec_path)).await;
@@ -73,9 +73,8 @@ async fn main() {
     let logger = Arc::new(Logger::new(log_file, LogLevel::Info).await.unwrap());
 
     let binaries = vec![
-        "/bin/sleep 50",
-        "/bin/sleep 51",
-        "/bin/sleep 52",
+        "./sam_dap",
+        "./sam_rep"
     ];
 
     let mut tasks = vec![];
